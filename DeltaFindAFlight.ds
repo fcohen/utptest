@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='DeltaFindAFlight' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+<accessorprefs values=""/>
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;http://delta.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;sjc&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;originCity&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;originCity&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(8)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;search-txt-field ui-autocomplete-input focus&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='originCity']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='inputwarp_source_city']/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;sea&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="setValue" value="textbox(&quot;destinationCity&quot;)" selected="true"/>
+		<accessor type="setValue" value="textbox(&quot;destinationCity&quot;)" selected="false"/>
+		<accessor type="setValue" value="textbox(9)" selected="false"/>
+		<accessor type="setValue" value="textbox(&quot;search-txt-field ui-autocomplete-input focus&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@id='destinationCity']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='inputwarp_destination_city']/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[3]/div[2]/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;27&quot;)" selected="true"/>
+		<accessor type="click" value="link(155)" selected="false"/>
+		<accessor type="click" value="link(&quot;ui-state-default ui-state-hover ui-state-hover-depart&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'27')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='ui-datepicker-div']/div[3]/table/tbody/tr[5]/td[4]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[5]/td[4]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;17&quot;)" selected="true"/>
+		<accessor type="click" value="link(162)" selected="false"/>
+		<accessor type="click" value="link(&quot;ui-state-default ui-state-hover ui-state-hover-return&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'17')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='ui-datepicker-div']/div[4]/table/tbody/tr[3]/td[3]/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//tr[3]/td[3]/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="click" value="button(&quot;Find Flights&quot;)" selected="true"/>
+		<accessor type="click" value="button(&quot;findFlightsSubmit&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;findFlightsSubmit&quot;)" selected="false"/>
+		<accessor type="click" value="button(&quot;secondaryLarge&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@id='findFlightsSubmit']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//form[@id='flightSearchForm']/div[4]/div/div/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[4]/div/div/button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="assertExists" value="span(&quot;NonStop&quot;)" selected="true"/>
+		<accessor type="assertExists" value="span(57)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='detailLinkHldrL_0']/a/span&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[4]/div[2]/div/a/span&quot;" selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type="assertExists" attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="assertExists" value="span(&quot;NonStop&quot;)" selected="true"/>
+		<accessor type="assertExists" value="span(57)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='detailLinkHldrL_0']/a/span&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[4]/div[2]/div/a/span&quot;" selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type="assertExists" attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="assertExists" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="assertExists" value="span(&quot;NonStop&quot;)" selected="true"/>
+		<accessor type="assertExists" value="span(57)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div[@id='detailLinkHldrL_0']/a/span&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[4]/div[2]/div/a/span&quot;" selected="false"/>
+	</dialect>
+	<dialect type="flextesting">
+		<accessor type="assertExists" attribute='' value='' selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
